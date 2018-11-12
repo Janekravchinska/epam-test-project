@@ -1,0 +1,73 @@
+
+
+.slider{
+	width: 80%;
+	margin: 0 auto;
+	height: 480px;
+	/*background-color: #D0C7C7;*/
+	background-image: url(../images/slider-bg.jpg);
+	background-repeat: repeat-x;
+	/*-webkit-background-size: cover;*/
+	/*background-size: cover;*/
+}
+.container{
+			/*background-color: #E86C6C;*/
+			width: 424px;
+			height: 324px;
+			perspective: 2000px;
+			position: relative;
+			margin: 0 auto;
+			/*left: 30%;*/
+			top: 30px;
+		}
+		#carousel{
+			/*background-color: #7FE7D5;*/
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			transform-style: preserve-3d;
+			transition: 2s;
+		}
+		#carousel figure{
+			/*border: 2px solid #630000;*/
+			width: 400px;
+			height: 300px;
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(367px); background-image: url(../images/sl-1.jpg);}
+		#carousel figure:nth-child(2){transform: rotateY(60deg) translateZ(367px); background-image: url(../images/sl-2.jpg);}
+		#carousel figure:nth-child(3){transform: rotateY(120deg) translateZ(367px); background-image: url(../images/sl-3.jpg);}
+		#carousel figure:nth-child(4){transform: rotateY(180deg) translateZ(367px); background-image: url(../images/sl-4.jpg);}
+		#carousel figure:nth-child(5){transform: rotateY(240deg) translateZ(367px); background-image: url(../images/sl-5.jpg);}
+		#carousel figure:nth-child(6){transform: rotateY(300deg) translateZ(367px); background-image: url(../images/sl-6.jpg);}
+
+		a.btn{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: #FFFFFF;
+			border-radius: 50%;
+			z-index: 900;
+			position: relative;
+			top: 404px;
+			left: 80px;
+			margin: 0 10px;
+		}
+		a.btn img{
+			width: 100%;
+			height: auto;
+		}
+		#a1:focus ~#carousel{transform: rotateY(0deg);}
+		#a2:focus ~#carousel{transform: rotateY(-60deg);}
+		#a3:focus ~#carousel{transform: rotateY(-120deg);}
+		#a4:focus ~#carousel{transform: rotateY(-180deg);}
+		#a5:focus ~#carousel{transform: rotateY(-240deg);}
+		#a6:focus ~#carousel{transform: rotateY(-300deg);}
+
+		a.btn:focus{
+			background-color: #898888;
+		}
