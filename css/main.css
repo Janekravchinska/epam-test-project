@@ -1,10 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css?family=Niramit:300,300i,400,400i,600,600i,700i');
+
 *{
 	margin: 0;
 	padding: 0;
 }
+body{
+	font-family: 'Niramit', sans-serif;
+}
 h1{
+	font-weight: 700;
 	font-size: 2em;
-	margin-top: 20px;
-	margin-bottom: 20px;
 	text-align: center;
+	padding-top: 5%;
+	/*padding-bottom: 8%;*/
+	color: #E1DEDE;
+}
+h2{
+	font-weight: 700;
+	font-style: italic;
+	color: #A78B8B;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+p{
+	color: #FFFFFF;
+	font-weight: 300;
+	font-style: italic;
 }

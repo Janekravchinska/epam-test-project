@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Home</title>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Niramit:300,300i,400,400i,600,600i,700i" rel="stylesheet"> -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/order.css">
+	<link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
 	<header>
@@ -16,7 +23,7 @@
 			</div><!--  end of logo -->
 			<nav class="header_nav">
 				<ul>
-					<li><a href="#">About us</a></li>
+					<li><a href="#about">About us</a></li>
 					<li><span>|</span></li>
 					<li><a href="#">Menu</a></li>
 					<li><span>|</span></li>
@@ -48,18 +55,20 @@
 		</div> <!-- end of container -->
 	</div><!-- end of slider -->
 
-	<section class="about">
+	<section class="about" id="about">
 		<h1>Restaurant <span>"Hot Pepper"</span></h1>
 		<h2>About us</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque a, beatae voluptatem. Repellat aspernatur, placeat autem sequi omnis, provident. Est, magni, cum voluptatem repellat atque nobis culpa voluptates iste omnis, nostrum eaque. Amet voluptatibus rem excepturi accusamus ipsam iusto nesciunt veniam culpa, placeat similique repudiandae, ducimus officiis quo rerum odio fugiat cumque, quibusdam! Enim, a blanditiis ipsam mollitia alias voluptatibus ut placeat atque maxime. Nemo obcaecati non eos nesciunt a dolorum, asperiores rerum labore necessitatibus velit accusantium repellendus esse voluptates mollitia quaerat impedit, animi dignissimos!</p>
 
-		<h2>Our team</h2>
-		<ul>
-			<li><a href="#"><img src="images/mr1.jpg" alt="">Gordon James Ramsay</a></li>
-			<li><a href="#"><img src="images/mr2.jpg" alt="">Hector Ismael Jimenez-Bravo</a></li>
-			<li><a href="#"><img src="images/mr3.jpg" alt="">Paul Bocuse</a></li>
-			<li><a href="#"><img src="images/mr4.jpg" alt="">Joël Robuchon</a></li>
-		</ul>
+		<div class="team">
+			<h2>Our team</h2>
+			<ul>
+				<li><a href="#"><img src="images/mr1.jpg" alt=""><span>Gordon James Ramsay</span></a><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex perferendis natus animi nulla est nisi rem tempore quibusdam dicta iure, quasi quas eos, veritatis debitis distinctio aperiam dolorem nostrum cum atque deserunt non nobis iste? Odit, qui at adipisci nisi neque, ipsum libero a impedit sequi sint nesciunt distinctio dicta tenetur illum reprehenderit, doloribus beatae inventore omnis provident deserunt. Est quibusdam veniam, expedita aliquid magni facere incidunt harum sint officia quae porro mollitia hic natus, doloribus quidem unde ex quod!</p></li>
+				<li><a href="#"><img src="images/mr2.jpg" alt=""><span>Hector Ismael Jimenez-Bravo</span></a><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum inventore officia, laborum nobis cumque sed minus consequatur aperiam porro cum, molestiae delectus quae nesciunt qui facilis ad, labore enim ipsam, veniam eos atque incidunt deleniti? At sequi cupiditate vero possimus, sint eius architecto eum! Quam iste facilis inventore minima tempore est cupiditate, totam sequi deserunt officia facere officiis dolorem, et? Necessitatibus vero, reiciendis, illo tempore at mollitia quod impedit pariatur excepturi consequuntur officiis vel inventore sint ad enim. Magnam!</p></li>
+				<li><a href="#"><img src="images/mr3.jpg" alt=""><span>Paul Bocuse</span></a><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quis aperiam nam rerum sed nostrum quae vitae explicabo, incidunt eaque error, dolor labore consequatur quasi at iusto numquam, tempore voluptatem voluptates placeat quisquam laborum reiciendis possimus pariatur cumque! Aperiam, repellendus ducimus. Neque eligendi dolorum fugiat quaerat earum beatae suscipit maxime expedita officia, iste laboriosam tempore minima possimus ullam hic debitis.</p></li>
+				<li><a href="#"><img src="images/mr4.jpg" alt=""><span>Joël Robuchon</span></a><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit corporis quis incidunt cumque minima quidem tenetur eveniet id sed, labore ipsam pariatur ducimus unde optio consequuntur officia esse, deserunt, voluptatibus magni architecto! Fugiat ad voluptas reprehenderit sint explicabo aperiam iure id similique eveniet quasi vel assumenda, voluptatum, aliquam molestias iusto totam. Dicta maxime perspiciatis sapiente earum voluptatem eveniet cumque! Quisquam, explicabo doloribus facere. Voluptatum facere ducimus eveniet laborum, quod minus soluta provident alias consequatur. Vero unde, inventore in odit repudiandae quam laboriosam, ullam temporibus. Sed nulla et, laudantium. Vel, laborum.</p></li>
+			</ul>
+		</div>
 		
 	</section> <!-- end about -->
 		
@@ -67,5 +76,42 @@
 	<div class="menu">
 		
 	</div> <!-- end of menu -->
+	<div class="order">
+		<form>
+	        <div id="orderDay">
+	            <label for="bday">Day:</label>
+	            <input type="date" id="bday" name="bday">
+	        </div> <!-- end of order day -->
+	        <div id="orderTime">
+	        	<label for="rtime">Time:</label>
+	        	<input type="time" id="rtime" name="rtime" min="08:00:00" max="20:00:00" step="3600">
+	        </div> <!-- ed of order time -->
+	        <div class="button">
+	        	<input type="reset" value="Clear">
+				<input type="submit" value="Book">
+	        </div><!--  end of button -->
+	    </form>
+	    <div class="placement">
+	    	<div class="table" id="table-1"><div>Table 1</div></div>
+	    	<div class="table" id="table-2"><div>Table 2</div></div>
+	    	<div class="table" id="table-3"><div>Table 3</div></div>
+	    	<div class="table" id="table-4"><div>Table 4</div></div>
+	    	<div class="table" id="table-5"><div>Table 5</div></div>
+	    	<div class="table" id="table-6"><div>Table 6</div></div>
+	    </div> <!-- end of placement -->
+	</div> <!-- end of order -->
+	<section class="gallery" id="sectionGallery">
+<!-- 		<div class="gallery-image" id="image-1"></div>
+		<div class="gallery-image" id="image-2"></div>
+		<div class="gallery-image" id="image-3"></div>
+		<div class="gallery-image" id="image-4"></div>
+		<div class="gallery-image" id="image-5"></div>
+		<div class="gallery-image" id="image-6"></div>
+		<div class="gallery-image" id="image-7"></div>
+		<div class="gallery-image" id="image-8"></div>
+		<div class="gallery-image" id="image-9"></div> -->
+		
+	</section>
 </body>
+<script src="js/gallery.js"></script>
 </html>

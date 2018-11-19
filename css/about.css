@@ -1,4 +1,58 @@
 .about{
 	width: 80%;
 	margin: 0 auto;
+	background: url(../images/left.jpg) repeat-y,
+				url(../images/about_bg_center.jpg);
+	-webkit-background-size: auto cover;
+	background-size: auto cover;
 }
+.about > p{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.team{
+	/*height: 500px;*/
+	/*overflow: scroll;*/
+}
+
+.team ul{
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: stretch;
+	align-items: stretch;
+	list-style: none;
+	flex-wrap: wrap;
+	padding: 10px 0;
+}
+.team ul li{
+	width: 15%;
+	flex-grow: 1;
+	padding: 1%;
+	border: 1px solid #979696;
+	border-radius: 10px;
+	margin: 0 10px;
+}
+.team ul li a{
+	text-align: center;
+	/*margin: 0 auto;*/
+}
+.team ul li a img{
+	display: block;
+	margin: 0 auto;
+}
+.team ul li a span{
+	display: block;
+	font-weight: 600;
+	font-size: 1.1em;
+	padding: 10px 0;
+}
+.team ul li p{
+	height: 200px;
+	overflow: auto;
+
+}
+/*.team ul li p::-webkit-scrollbar {
+    width: 10px;
+}*/
+

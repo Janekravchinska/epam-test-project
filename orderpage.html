@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Order Page</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+	<div class="order">
+	<form>
+        <div>
+            <label for="bday">Day:</label>
+            <input type="date" id="bday" name="bday">
+        </div>
+        <div>
+        	<label for="rtime">Time:</label>
+        	<input type="time" id="rtime" name="rtime" min="08:00:00" max="20:00:00" step="3600">
+        </div>
+        <div class="button">
+        	<input type="reset" value="Clear">
+			<input type="submit" value="Book">
+        </div>
+    </form>
+    <div class="placement">
+    	<div class="table" id="table-1"><div>Table 1</div></div>
+    	<div class="table" id="table-2"><div>Table 2</div></div>
+    	<div class="table" id="table-3"><div>Table 3</div></div>
+    	<div class="table" id="table-4"><div>Table 4</div></div>
+    	<div class="table" id="table-5"><div>Table 5</div></div>
+    	<div class="table" id="table-6"><div>Table 6</div></div>
+    </div> <!-- end of placement -->
+	</div> <!-- end of order -->
+</body>
+<script src="js/order.js"></script>
+</html>
