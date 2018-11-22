@@ -165,15 +165,21 @@ const galleryImg = [
 
 const section = document.getElementById("sectionGallery");
 
+
 function addElement() {
 	// create a nev div element
 	for(const element of galleryImg){
 
-	const divGalleryImg = document.createElement("div");
-	divGalleryImg.setAttribute('class', 'gallery-image');
-	divGalleryImg.setAttribute('id', element.id);
-	section.appendChild(divGalleryImg);
-	divGalleryImg.style.backgroundImage = 'url(' +element.url+ ')';
-		}
+		const divGalleryWraper = document.createElement("div");
+		divGalleryWraper.setAttribute('class', 'gallery-wraper');
 
-}
+		const divGalleryImg = document.createElement("div");
+		divGalleryImg.setAttribute('class', 'gallery-image');
+		divGalleryImg.setAttribute('id', element.id);
+		divGalleryWraper.appendChild(divGalleryImg);
+		divGalleryImg.style.backgroundImage = 'url(' +element.url+ ')';
+
+		section.appendChild(divGalleryWraper);
+			}
+};
+

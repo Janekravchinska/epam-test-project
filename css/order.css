@@ -7,7 +7,7 @@
 	justify-content: center;
 	color: #FFFFFF;
 }
-form{
+.order form{
 	flex-grow: 4;
 	background-image:
 	url(../images/bg_2.jpg);
@@ -15,7 +15,7 @@ form{
 	background-size: contain;
 	background-repeat: no-repeat;*/
 }
-form div{
+.order form div{
 	width: 90%;
 	margin: 0 auto;
 	padding: 10px 5px;

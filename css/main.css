@@ -5,8 +5,12 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	height: 100%;
+}
 body{
 	font-family: 'Niramit', sans-serif;
+	height: 100%;
 }
 h1{
 	font-weight: 700;
@@ -30,3 +34,7 @@ p{
 	font-weight: 300;
 	font-style: italic;
 }
+/*.inner{
+	width: 80%;
+	margin: 0 auto;
+}*/
