@@ -47,6 +47,7 @@ header ul li a{
 .autocomplete-items div{
 	/*border: 1px solid #9D9D9D;*/
 	display: block;
+	background: #971414;
 }
 .inner form label{
 	color: #FFFFFF;
