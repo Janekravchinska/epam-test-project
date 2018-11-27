@@ -34,10 +34,16 @@ p{
 	font-weight: 300;
 	font-style: italic;
 }
-/*.inner{
-	width: 80%;
+ul{
+	list-style: none;
+}
+ul li a{
+	color: #FFFFFF;
+}
+.body_inner{
+	width: 100%;
 	margin: 0 auto;
-}*/
+}
 input{
 	outline: none;
 }

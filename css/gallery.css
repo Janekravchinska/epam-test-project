@@ -7,7 +7,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-content: space-between;
+	align-content: center;
 }
 .gallery-image{
 	width: 300px;
@@ -21,7 +21,7 @@
 	background-repeat: no-repeat;
 }
 .gallery-wraper{
-	width: 30%;
+	width: 20%;
 	display: flex;
 	justify-content: center;
 	align-content: center;

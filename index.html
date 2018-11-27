@@ -17,28 +17,43 @@
 	<link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-	<!-- <div class="inner"> -->
+	<div class="body_inner">
 		<header>
 			<div class="inner">
 				<div class="logo">
 					<a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
 				</div><!--  end of logo -->
 				<nav class="header_nav">
-					<ul>
-						<li><a href="#about">About us</a></li>
+					<ul class="first_level_nav">
+						<li id="header_nav_about"><a href="#about">About us</a>
+							<ul class="second_level_nav">
+								<li><a href="#"></a>Our history</li>
+								<li><a href="#"></a>Our team</li>
+								
+							</ul>
+						</li>
 						<li><span>|</span></li>
-						<li><a href="#">Menu</a></li>
+						<li id="header_nav_menu"><a href="#">Menu</a>
+							<ul class="second_level_nav">
+								<li><a href="#"></a>Salats</li>
+								<li><a href="#"></a>Soups</li>
+								<li><a href="#"></a>Meals</li>
+								<li><a href="#"></a>Drinks</li>
+								
+							</ul>
+						</li>
 						<li><span>|</span></li>
-						<li><a href="#gallery_section">Galery</a></li>
+						<li header_nav_gallery><a href="#gallery_section">Galery</a></li>
 						<li><span>|</span></li>
-						<li><a href="#">Ivents</a></li>
+						<li header_nav_Ivents><a href="#">Ivents</a></li>
 						<li><span>|</span></li>
-						<li><a href="#">Contacts</a></li>
+						<li id="header_nav_contacts"><a href="#">Contacts</a></li>
 					</ul>
 				</nav><!--   -->
 				<form autocomplete="off" action="#" id="search_form">
+					<label for="myInput">Search:</label>
 					<div class="autocomplete">
-					    <label for="myInput">Search:</label>
+					    <!-- <label for="myInput">Search:</label> -->
 					    <input id="myInput" type="text" name="myName" placeholder="Start to write">
 					</div>
 					  <!-- <input type="submit"> -->
@@ -114,16 +129,39 @@
 		</section>
 		<footer>
 			<div class="row row-1">
-				<h3>Conect with us</h3>
-				<h3>Navigation</h3>
-				<h3>Services & support</h3>
+				<div class="conect">
+					<h3>Conect with us</h3>
+					<div id="open_time">
+						<h4>We are open:</h4>
+						<p>From <time>8:00
+						</time> to <time>20:00</time>.</p>
+					</div>
+					<div id="phone">
+						<p>Tell: <span>(068)-434-88-09</span></p>
+					</div>
+					<div>
+						<p>Adress: Kiev. New Found st. 15.</p>
+					</div>
+					<div id="social">
+						<p>We are in social net:</p>
+						<a href="#" id="fb"></a>
+						<a href="#" id="insta"></a>
+						<a href="#" id="tellegram"></a>
+					</div>
+				</div> <!-- end of cotent -->
+				<div class="navigation">
+					<h3>Navigation</h3>
+				</div><!--  end of navigation -->
+				<div class="support">
+					<h3>Services & support</h3>
+				</div><!-- end of support -->
 				
 			</div><!--  end of row 1-->
 			<div class="row row-2">
 				
 			</div>
 		</footer><!-- end of footer -->
-	<!-- </div> end of inner -->
+	<!-- </div> end of body_inner -->
 </body>
 <script src="js/gallery.js"></script>
 <!-- <script src="js/dataList.js"></script> -->

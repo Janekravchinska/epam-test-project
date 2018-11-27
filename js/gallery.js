@@ -166,6 +166,14 @@ const galleryImg = [
 const section = document.getElementById("sectionGallery");
 
 
+
+function addNavElement() {
+	for (const elem of galleryImg) {
+		
+	}
+}
+
+
 function addElement() {
 	// create a nev div element
 	for(const element of galleryImg){

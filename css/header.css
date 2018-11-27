@@ -14,41 +14,80 @@ header{
 	margin-left: 10px;
 	display: block;
 }
-header ul li{
+.first_level_nav > li{
 	display: inline-block;
 	padding: 20px;
 	color: #D0CFCF;
+	position: relative;
 }
-header ul li a{
+
+.first_level_nav li a{
 	/*text-decoration: none;*/
 	color: #FFFFFF;
 
+}
+.second_level_nav{
+	position: absolute;
+	top: 60px;
+	display: none;
+}
+.first_level_nav li:hover .second_level_nav{
+	display: block;
+	z-index: 66;
 }
 .inner{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	/*margin: 10px;*/
 
 }
 #search_form{
 	width: 20%;
+	display: flex;
+
+}
+.autocomplete{
 	position: relative;
+}
+#myInput:after{
+	/*overflow: both;*/
 }
 .autocomplete-items{
 	position: absolute;
-	width: 60%;
+	width: 100%;
 	z-index: 99;
 	color: #FFFFFF;
-	padding-left: 55px;
-	padding-right: 100px;
 }
 .autocomplete-items div{
 	/*border: 1px solid #9D9D9D;*/
 	display: block;
-	background: #971414;
+	background: rgba(114, 114, 114, 0.8);
+	margin-bottom: 1px;
+	border-radius: 8px;
 }
 .inner form label{
 	color: #FFFFFF;
+	/*float: left;*/
+	display: block;
+}
+
+
+@media screen and (max-width: 1200px){
+	.logo{
+		margin-left: 3%;
+	}
+	.first_level_nav > li{
+		padding: 2%;
+	}
+	.inner{
+		justify-content: space-between;
+	}
+	#search_form{
+		width: 30%;
+	}
+
+}
+@media screen and (max-width: 900px){
+	
 }
