@@ -55,4 +55,17 @@
 /*.team ul li p::-webkit-scrollbar {
     width: 10px;
 }*/
+@media screen and (max-width: 1000px){
+	.team ul{
+		padding: 2% 0;
+	}
+	.team ul li{
+		width: 40%
+	}
+}
+@media screen and (max-width: 500px){
+	.team ul li{
+		width: 90%
+	}
+}
 

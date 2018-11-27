@@ -75,3 +75,24 @@
 .table div:hover{
 	background-color: #353434;
 }
+
+@media screen and (max-width: 1000px){
+	.placement{
+		width: 60%;
+	}
+}
+@media screen and (max-width: 800px){
+	.table{
+	width: 30%;
+	height: 30%;
+	}
+}
+@media screen and (max-width: 500px){
+	.table{
+	width: 40%;
+	height: 90px;
+	}
+	.table div{
+	width: 20%;
+	padding: 5% 10%;
+}

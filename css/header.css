@@ -89,5 +89,13 @@ header{
 
 }
 @media screen and (max-width: 900px){
-	
+	.inner form label{
+		display: none;
+	}
+	#search_form{
+		width: 25%;
+	}
+	.autocomplete input{
+		width: 90%;
+	}
 }
