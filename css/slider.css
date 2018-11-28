@@ -38,7 +38,8 @@
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(367px); background-image: url(../images/sl-1.jpg);}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(367px); 
+	background-image: url(../images/sl-1.jpg);}
 #carousel figure:nth-child(2){transform: rotateY(60deg) translateZ(367px); background-image: url(../images/sl-2.jpg);}
 #carousel figure:nth-child(3){transform: rotateY(120deg) translateZ(367px); background-image: url(../images/sl-3.jpg);}
 #carousel figure:nth-child(4){transform: rotateY(180deg) translateZ(367px); background-image: url(../images/sl-4.jpg);}
@@ -73,34 +74,22 @@ a.btn:focus{
 }
 
 @media screen and (max-width: 990px){
-	.container{
-		/*display: none;*/
+	#carousel{
+		transition: 1s;
 	}
-	#carousel:nth-child(1){
-		background-image: url(../images/sl-1.jpg);
-		transform: none;
-	}
-	#carousel:nth-child(2){
-	 	background-image: url(../images/sl-2.jpg);
-		transform: none;
-	}
-	
-	#carousel:nth-child(3){
-		transform: none;
-	 background-image: url(../images/sl-3.jpg);}
-	
-	#carousel:nth-child(4){
-		transform: none;
-	 background-image: url(../images/sl-4.jpg);}
-	
-	#carousel:nth-child(5){
-		transform: none;
-	 background-image: url(../images/sl-5.jpg);}
-	
-	#carousel:nth-child(6){
-		transform: none;
-	 background-image: url(../images/sl-6.jpg);}
-	
 
+	#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(0) translateX(0px);}
+	#carousel figure:nth-child(2){transform: rotateY(0deg) translateZ(0) translateX(-700px);}
+	#carousel figure:nth-child(3){transform: rotateY(0deg) translateZ(0) translateX(-1400px);}
+	#carousel figure:nth-child(4){transform: rotateY(0deg) translateZ(0) translateX(-2100px);}
+	#carousel figure:nth-child(5){transform: rotateY(0deg) translateZ(0) translateX(-2800px);}
+	#carousel figure:nth-child(6){transform: rotateY(0deg) translateZ(0) translateX(-3500px);}
+
+	#a1:focus ~#carousel{transform: rotateY(0deg) translateX(0px);}
+	#a2:focus ~#carousel{transform: rotateY(0deg) translateX(700px);}
+	#a3:focus ~#carousel{transform: rotateY(0deg) translateX(1400px);}
+	#a4:focus ~#carousel{transform: rotateY(0deg) translateX(2100px);}
+	#a5:focus ~#carousel{transform: rotateY(0deg) translateX(2800px);}
+	#a6:focus ~#carousel{transform: rotateY(0deg) translateX(3500px);}
 
 }

@@ -2,18 +2,19 @@
 	width: 100%;
 	margin: 0 auto;
 	background: url(../images/left.jpg) repeat-y,
-				url(../images/about_bg_center.jpg);
-	-webkit-background-size: auto cover;
-	background-size: auto cover;
+				url(../images/table2.jpg);
+	-webkit-background-size: 10%, cover;
+	background-size: 10%, auto;
 }
 .about > p{
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 10%;
+	padding-right: 8%;
 }
 
 .team{
-	/*height: 500px;*/
-	/*overflow: scroll;*/
+padding-bottom: 20px;
+width: 80%;
+margin: 0 auto;
 }
 
 .team ul{
