@@ -33,6 +33,7 @@ margin: 0 auto;
 	border: 1px solid #979696;
 	border-radius: 10px;
 	margin: 0 10px;
+	position: relative;
 }
 .team ul li a{
 	text-align: center;
@@ -48,15 +49,41 @@ margin: 0 auto;
 	font-size: 1.1em;
 	padding: 10px 0;
 }
+.read_more{
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	padding: 2%;
+	display: block;
+	background-color: #615F5F;
+	color: #FFFFFF;
+	opacity: 0.9;
+	border-radius: 8px;
+}
 .team ul li p{
-	height: 200px;
-	overflow: auto;
+	height: 5em;
+	overflow: hidden;
+	/*margin-bottom: 1.2em;*/
 
 }
-/*.team ul li p::-webkit-scrollbar {
-    width: 10px;
-}*/
-@media screen and (max-width: 1000px){
+.read_more:focus{
+	opacity: 0;
+}
+#read1:focus ~#team_p1{
+	height: 100%;
+}
+#read2:focus ~#team_p2{
+	height: 100%;
+}
+#read3:focus ~#team_p3{
+	height: 100%;
+}
+#read4:focus ~#team_p4{
+	height: 100%;
+}
+
+
+@media screen and (max-width: 1200px){
 	.team ul{
 		padding: 2% 0;
 	}
