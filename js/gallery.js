@@ -1,5 +1,5 @@
 
-window.onload = addElement;
+window.onload = addNavElement;
 
 
 const galleryImg = [
@@ -165,29 +165,58 @@ const galleryImg = [
 
 const section = document.getElementById("sectionGallery");
 
+const size = 9;
 
+// const subGalleryImg =[];
 
 function addNavElement() {
-	for (const elem of galleryImg) {
+	const pagNav = document.createElement('div');
+	pagNav.setAttribute('id', 'pagination_nav');
+
+	const prev = document.createElement('a');
+	prev.setAttribute('class', 'pagination_button');
+	prev.setAttribute('id', 'prev');
+	prev.innerHTML= '<<';
+	pagNav.appendChild(prev);
+
+
+	for ( let i = 1; i < Math.ceil(galleryImg.length/size)+1; i++) {
+			const paginationButton = document.createElement('a');
+			paginationButton.setAttribute('class', 'pagination_button');
+			paginationButton.setAttribute('id', 'pag_but_'+i);
+			paginationButton.innerHTML = i;
+			pagNav.appendChild(paginationButton);
+	}
+
+	const next = document.createElement('a');
+	next.setAttribute('class', 'pagination_button');
+	next.setAttribute('id', 'next');
+	next.innerHTML= '>>';
+	pagNav.appendChild(next);
+
+	section.appendChild(pagNav);
+
+	for ( let i = 1; i < Math.ceil(galleryImg.length/size)+1; i++) {
+
+			const paginationSection = document.createElement('div');
+			paginationSection.setAttribute('class', 'pagination_section');
+			paginationSection.setAttribute('id', 'pag_sec_' + i);
+
+			for(const element of galleryImg){
+				if (element.imgId > ((i-1)*9) && element.imgId <= (i*9)) {
+					const divGalleryWraper = document.createElement("div");
+					divGalleryWraper.setAttribute('class', 'gallery-wraper');
+
+					const divGalleryImg = document.createElement("div");
+					divGalleryImg.setAttribute('class', 'gallery-image');
+					divGalleryImg.setAttribute('id', element.id);
+					divGalleryWraper.appendChild(divGalleryImg);
+					divGalleryImg.style.backgroundImage = 'url(' +element.url+ ')';
+
+					paginationSection.appendChild(divGalleryWraper);
+					}
+				}
+			section.appendChild(paginationSection);
 		
 	}
-}
-
-
-function addElement() {
-	// create a nev div element
-	for(const element of galleryImg){
-
-		const divGalleryWraper = document.createElement("div");
-		divGalleryWraper.setAttribute('class', 'gallery-wraper');
-
-		const divGalleryImg = document.createElement("div");
-		divGalleryImg.setAttribute('class', 'gallery-image');
-		divGalleryImg.setAttribute('id', element.id);
-		divGalleryWraper.appendChild(divGalleryImg);
-		divGalleryImg.style.backgroundImage = 'url(' +element.url+ ')';
-
-		section.appendChild(divGalleryWraper);
-			}
 };
-

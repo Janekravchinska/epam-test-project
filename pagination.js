@@ -92,3 +92,172 @@ class Pages{
 
 
 // Object.assign( c, a, b)
+
+
+
+
+const section = document.getElementById("sectionGallery");
+
+const size = 9;
+
+// const subGalleryImg =[];
+
+function addNavElement() {
+
+	for ( let i = 1; i < Math.ceil(galleryImg.length/size)+1; i++) {
+			const paginationButton = document.createElement('a');
+			paginationButton.setAttribute('class', 'paginatio_button');
+			paginationButton.setAttribute('id', 'pag_but_'+i);
+			paginationButton.innerHTML = i;
+			section.appendChild(paginationButton);
+
+			const paginationSection = document.createElement('div');
+			paginationSection.setAttribute('class', 'pagination_section');
+			paginationSection.setAttribute('id', 'pag_sec_' + i);
+			section.appendChild(paginationSection);
+
+
+		
+	}
+}
+
+
+
+function addElement() {
+	// create a nev div element
+	for(const element of galleryImg){
+
+		const divGalleryWraper = document.createElement("div");
+		divGalleryWraper.setAttribute('class', 'gallery-wraper');
+
+		const divGalleryImg = document.createElement("div");
+		divGalleryImg.setAttribute('class', 'gallery-image');
+		divGalleryImg.setAttribute('id', element.id);
+		divGalleryWraper.appendChild(divGalleryImg);
+		divGalleryImg.style.backgroundImage = 'url(' +element.url+ ')';
+
+		section.appendChild(divGalleryWraper);
+			}
+};
+
+
+
+
+
+
+// function addElement() {
+// 	// create a nev div element
+// 	for(const element of galleryImg){
+
+// 		const divGalleryWraper = document.createElement("div");
+// 		divGalleryWraper.setAttribute('class', 'gallery-wraper');
+
+// 		const divGalleryImg = document.createElement("div");
+// 		divGalleryImg.setAttribute('class', 'gallery-image');
+// 		divGalleryImg.setAttribute('id', element.id);
+// 		divGalleryWraper.appendChild(divGalleryImg);
+// 		divGalleryImg.style.backgroundImage = 'url(' +element.url+ ')';
+
+// 		section.appendChild(divGalleryWraper);
+// 			}
+// };
+
+
+// const subGalleryImg =[];
+
+// function addNavElement() {
+
+// 	for ( let i = 1; i < Math.ceil(galleryImg.length/size)+1; i++) {
+// 			const paginationButton = document.createElement('a');
+// 			paginationButton.setAttribute('class', 'paginatio_button');
+// 			paginationButton.setAttribute('id', 'pag_but_'+i);
+// 			paginationButton.innerHTML = i;
+// 			section.appendChild(paginationButton);
+
+// 			const paginationSection = document.createElement('div');
+// 			paginationSection.setAttribute('class', 'pagination_section');
+// 			paginationSection.setAttribute('id', 'pag_sec_' + i);
+// 			section.appendChild(paginationSection);
+
+
+		
+// 	}
+// }
+
+
+
+// function addElement() {
+
+// 		const divGalleryWraper = document.createElement("div");
+// 		divGalleryWraper.setAttribute('class', 'gallery-wraper');
+
+// 		const divGalleryImg = document.createElement("div");
+// 		divGalleryImg.setAttribute('class', 'gallery-image');
+// 		divGalleryImg.setAttribute('id', element.id);
+// 		divGalleryWraper.appendChild(divGalleryImg);
+// 		divGalleryImg.style.backgroundImage = 'url(' +element.url+ ')';
+
+// 		paginationSection.appendChild(divGalleryWraper);
+// 			}
+// ;
+
+// function pagination() {
+// 	const pageLimit = 9;
+// 	let count = 0;
+// 	let id = 1;
+
+
+// 	for ( const element of galleryImg){
+// 			let wrap = 'w'+id;
+// 		if (count === 0){
+// 			const paginationButton = document.createElement('a');
+// 			paginationButton.setAttribute('class', 'paginatio_button');
+// 			paginationButton.setAttribute('id', 'pag_but_'+id);
+// 			paginationButton.innerHTML = id;
+// 			section.appendChild(paginationButton);
+
+// 			const paginationSection = document.createElement('div');
+// 			paginationSection.setAttribute('class', 'pagination_section');
+// 			paginationSection.setAttribute('id', 'pag_sec_' + id);
+
+// 			const divGalleryWraper = document.createElement("div");
+// 			divGalleryWraper.setAttribute('class', 'gallery-wraper');
+// 			divGalleryWraper.setAttribute('id', wrap);
+
+// 			const divGalleryImg = document.createElement("div");
+// 			divGalleryImg.setAttribute('class', 'gallery-image');
+// 			divGalleryImg.setAttribute('id', element.id);
+// 			divGalleryWraper.appendChild(divGalleryImg);
+// 			divGalleryImg.style.backgroundImage = 'url(' +element.url+ ')';
+
+// 			paginationSection.appendChild(divGalleryWraper);
+
+// 			section.appendChild(paginationSection);
+
+
+// 			count++;
+// 			id++;
+// 		} 
+// 		if (count < 9) {
+// 			const inner = getElementById(wrap);
+// 			const divGalleryImg = document.createElement("div");
+// 			divGalleryImg.setAttribute('class', 'gallery-image');
+// 			divGalleryImg.setAttribute('id', element.id);
+// 			inner.appendChild(divGalleryImg);
+// 			divGalleryImg.style.backgroundImage = 'url(' +element.url+ ')';
+
+// 			count++;
+// 		}
+// 		else {
+// 			count = 0;
+// 		}
+// 	}
+// }
+
+// function addSection(id, element, pageLimit) {
+// 	if(count === 0 || count === 9) {
+// 		id++;
+// 		//add button with event listener, add section with id and add element to section
+// 	}
+// 	count = (!count) ? 1 : (count === 9) ? 0;
+// }

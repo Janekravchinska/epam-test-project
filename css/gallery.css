@@ -4,11 +4,40 @@
 	margin: 0 auto;
 	background-color: #050507;
 	background-image: url(../images/style_met.jpg);
+	position: relative;
+/*	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;*/
+}
+#pagination_nav{
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.pagination_section{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
+	padding-bottom: 60px;
+	/*position: absolute;*/
+}
+.pagination_button{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #FFFFFF;
+	position: relative;
+	top: 100%;
+	text-align: center;
+	cursor: pointer;
+	margin: 1px;
 }
 .gallery-image{
 	width: 300px;
@@ -30,7 +59,10 @@
 	border: 1px solid #FFFFFF;
 }
 #gallery_section{
-	width: 100%;
+	width: 80%;
+	margin: 0 auto;
 	padding: 40px;
 }
+
+
 
