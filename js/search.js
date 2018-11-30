@@ -1,4 +1,4 @@
-autocomplete(document.getElementById("myInput"), availableName);
+autocomplete(document.getElementById("myInput", availableName);
 
 function autocomplete(inputResult, possibleValues) {
   inputResult.addEventListener("input", function (e) {

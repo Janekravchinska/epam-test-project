@@ -5,11 +5,6 @@
 	background-color: #050507;
 	background-image: url(../images/style_met.jpg);
 	position: relative;
-/*	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;*/
 }
 #pagination_nav{
 	width: 100%;
@@ -38,6 +33,10 @@
 	text-align: center;
 	cursor: pointer;
 	margin: 1px;
+	border-radius: 8px;
+}
+.pagination_button:hover{
+	background-color: #CD8E8E;
 }
 .gallery-image{
 	width: 300px;

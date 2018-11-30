@@ -165,7 +165,7 @@ const galleryImg = [
 
 const section = document.getElementById("sectionGallery");
 
-const size = 9;
+const size = 6;
 
 // const subGalleryImg =[];
 
@@ -177,6 +177,9 @@ function addNavElement() {
 	prev.setAttribute('class', 'pagination_button');
 	prev.setAttribute('id', 'prev');
 	prev.innerHTML= '<<';
+	prev.addEventListener('click', function(e){
+		
+	});
 	pagNav.appendChild(prev);
 
 
@@ -203,7 +206,7 @@ function addNavElement() {
 			paginationSection.setAttribute('id', 'pag_sec_' + i);
 
 			for(const element of galleryImg){
-				if (element.imgId > ((i-1)*9) && element.imgId <= (i*9)) {
+				if (element.imgId > ((i-1)*size) && element.imgId <= (i*size)) {
 					const divGalleryWraper = document.createElement("div");
 					divGalleryWraper.setAttribute('class', 'gallery-wraper');
 
@@ -217,6 +220,5 @@ function addNavElement() {
 					}
 				}
 			section.appendChild(paginationSection);
-		
 	}
 };
